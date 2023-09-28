@@ -12,6 +12,8 @@
 > 7.  [Kaggle4](https://www.kaggle.com/code/jfeng1023/using-elastic-net-to-select-variables)
 > 8.  [Kaggle5](https://www.kaggle.com/code/deepakkumargunjetti/introduction-to-elastic-net-regression)
 > 9.  [Kaggle6](https://www.kaggle.com/code/uocoeeds/building-a-regression-model-with-elastic-net)
+> 10.  [Book1](https://bradleyboehmke.github.io/HOML/regularized-regression.html)
+> 11.  [Book2](https://scientistcafe.com/ids/r/ch10)
 
 > ```{r}
 > 
