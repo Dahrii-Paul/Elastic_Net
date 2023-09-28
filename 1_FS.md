@@ -14,7 +14,7 @@
 > 9.  [Kaggle6](https://www.kaggle.com/code/uocoeeds/building-a-regression-model-with-elastic-net)
 > 10.  [Book1](https://bradleyboehmke.github.io/HOML/regularized-regression.html)
 > 11.  [Book2](https://scientistcafe.com/ids/r/ch10)
-> 12.  [book3](https://bookdown.org/ndirienzo/ista_321_data_mining/regularization.html)
+> 12.  [Book3](https://bookdown.org/ndirienzo/ista_321_data_mining/regularization.html)
 
 > ```{r}
 > 
