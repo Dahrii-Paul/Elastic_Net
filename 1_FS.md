@@ -16,6 +16,7 @@
 > 11.  [Book2](https://scientistcafe.com/ids/r/ch10)
 > 12.  [Book3](https://bookdown.org/ndirienzo/ista_321_data_mining/regularization.html)
 
+
 > ```{r}
 > 
 > ```
