@@ -18,6 +18,47 @@
 
 
 > ```{r}
-> 
+> cl <- makeCluster(detectCores()-1)
+registerDoParallel(cl)
+# Set multiple seeds
+multiple_seeds <- function(seed) {
+  set.seed(seed)
+  list.of.fits <- list()
+  for (i in 0:100) {
+    fit.name <- paste0("alpha", i/100)
+    list.of.fits[[fit.name]] <- cv.glmnet(
+      x.train,
+      y.train,
+      alpha = i/100,
+      standardize = TRUE,
+      nfolds = 10,
+      type.measure = "class",
+      family = "binomial",
+      parallel = TRUE
+    )
+  }
+  
+  results_df <- data.frame()
+  
+  for (fit.name in names(list.of.fits)) {
+    fit <- list.of.fits[[fit.name]]
+    lambda <- fit$lambda
+    measure <- fit$cvm
+    fit_df <- data.frame(seed = seed, alpha = fit.name, lambda = lambda, measure = measure)
+    results_df <- rbind(results_df, fit_df)
+  }
+  
+  return(results_df)
+}
+
+#total_seeds <- 10
+results_list <- list()
+
+for (s in 1:100) {
+  results_list[[s]] <- multiple_seeds(s)
+}
+results_df <- do.call(rbind, results_list)
+stopCluster(cl)
+write.csv(results_df,"results_df.csv")
 > ```
 > 
