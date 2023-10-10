@@ -18,7 +18,7 @@
 
 ## code-1
 
-```{r}
+```R
 cl <- makeCluster(detectCores()-1)
 registerDoParallel(cl)
 # Set multiple seeds
