@@ -17,8 +17,8 @@
 > 12.  [Book3](https://bookdown.org/ndirienzo/ista_321_data_mining/regularization.html)
 
 
-> ```{r}
-> cl <- makeCluster(detectCores()-1)
+```{r}
+cl <- makeCluster(detectCores()-1)
 registerDoParallel(cl)
 # Set multiple seeds
 multiple_seeds <- function(seed) {
@@ -60,5 +60,5 @@ for (s in 1:100) {
 results_df <- do.call(rbind, results_list)
 stopCluster(cl)
 write.csv(results_df,"results_df.csv")
-> ```
-> 
+```
+
