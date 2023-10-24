@@ -15,6 +15,7 @@
 > 10.  [Book1](https://bradleyboehmke.github.io/HOML/regularized-regression.html)
 > 11.  [Book2](https://scientistcafe.com/ids/r/ch10)
 > 12.  [Book3](https://bookdown.org/ndirienzo/ista_321_data_mining/regularization.html)
+> 13.  [Tuning Elastic Net](https://markvandewielblog.wordpress.com/2022/09/02/sparsity-can-not-be-estimated-why-tuning-the-elastic-net-is-hard/)
 
 ## code-1
 
